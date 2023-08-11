@@ -1,0 +1,453 @@
+/*Обнуление*/
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+a {text-decoration: none;}
+ul, ol, li{list-style: none;}
+img{vertical-align: top;}
+
+nav,footer,header,aside{display: block;}
+
+
+h1{
+	font-weight: 600;
+	font-size: 24px;
+}
+h2{
+	font-weight: 600;
+	font-size: 18px;
+}
+h3{
+	font-weight: 600;
+	font-size: 16px;
+}
+h4{
+	font-weight: 400;
+	font-size: 16px;
+}
+h5{
+	font-weight: 400;
+	font-size: 14px;
+}
+
+@font-face {
+	font-family: 'Graphik LCG';
+	src: url('../font/GraphikLCG-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html,body{
+	height: 100%;
+	line-height: 1;
+	font-family: "Graphik LCG";
+}
+.container{
+	max-width: 904px;
+	margin: 0 auto;
+}
+/*___gumburger_________________________________*/
+.menu-btn {
+	width: 2.5rem;
+	height: 2rem;
+	position: relative;
+	z-index:101;
+	overflow: hidden;
+	
+}
+.menu-btn span {
+	width: 1.5rem;
+	height: 3px;
+	position: absolute;
+	top: 52%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	transition: all 0.5s;
+}
+.menu-btn span:nth-of-type(2) {
+	top: calc(40% - 5px);
+}
+.menu-btn span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
+.menu-btn.active{
+	position: fixed;
+	left: 87%;
+}
+.menu-btn.active span:nth-of-type(1) {
+	top: 50%;
+	transform: translate(-50%, 0%) rotate(-45deg);
+	background-color: black;
+}
+.menu-btn.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);
+  background-color: black;
+}
+.menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+  	background: #fff;
+	transform: translateX(-100%);
+	transition: transform 0.5s; 
+	z-index: 100;
+}
+.menu.active {
+	transform: translateX(0);
+}
+.menu li{
+	list-style-type: none;
+}
+.menu li .logo{
+	margin: 1.5rem 0 1rem 0;
+}
+.menu li .logo-name{
+	color: black;
+}
+.menu li a{
+	display: flex;
+	justify-content: space-between;
+	padding-left: 9rem;
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 1rem;
+	color: #83898F;
+	padding: 1rem 0 1rem 0;
+}
+.arrow-right {
+	width: 10px;
+	height: 10px;
+	border-top: 2px solid black;
+	border-right: 2px solid black;
+	margin-right: 3%;
+	transform: rotate(45deg);
+}
+hr{
+	width: 100%;
+	height: 1px;
+	border-top: 1px solid black;
+	opacity: 0.1;
+}
+/*_____body_______________________________*/
+/*_____logo_______________________________*/
+.circle1{
+	background: #2A6CEA;
+	clip-path: circle(50%);
+	height: 1.4em;
+	width: 1.4em;
+	z-index: 10;
+}
+.circle2{
+	background: #ECEFF2;
+	clip-path: circle(50%);
+	height: 1.4em;
+	width: 1.4em;
+	position: absolute;
+	z-index: 9;
+	left: 0.8em;
+}
+.logo-name{
+	font-size: 1.1em;
+	position: absolute;
+	top: 6%;
+	left: 2.5rem;
+	font-weight: 800;
+	color: white;
+}
+.logo{
+	display: flex;
+	position: relative;
+}
+/*_____header_______________________________*/
+.block-1{
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 3rem;
+}
+.img-back{
+	width: 100%;
+	margin: auto;
+	z-index: -1;
+	background-image:	url("../image/Lunch320.png");
+	background-color: rgba(42, 108, 234, 1);
+	background-position-x: center;
+	background-position-y: top;
+	background-repeat: no-repeat;
+	background-clip: border-box;
+	background-attachment: local;
+	background-size: 100%;
+	background-blend-mode: overlay;
+	height: 100%;
+	position: absolute;
+	opacity: 0.8;
+}
+.top{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.header{
+	display: flex;
+	flex-wrap: nowrap;
+   justify-content: space-between;
+	margin: 1.8rem 0.5rem 1rem 1rem;
+}
+.h1{
+	font-weight: 600;
+	font-size: 1.6rem;
+	text-align: center;
+	line-height: 2rem;
+	color: white;
+}
+.h2{
+	font-weight: 600;
+	font-size: 1.03rem;
+	text-align: center;
+	line-height: 2rem;
+	color: white;
+}
+.h3{
+	font-size: 0.87rem;
+	line-height: 2rem;
+}
+.h5{
+	font-size: 0.88rem;
+	line-height: 1.5rem;
+}
+.h6{
+	font-size: 0.746rem;
+	line-height: 1rem;
+}
+.mr-15{
+	margin-top: 3.5rem;
+}
+.btn-big{
+	padding: 1.2rem;
+	font-size: 1.27rem;
+	font-weight: 600;
+	border-radius: 5px;
+	margin-top: 1.2rem;
+	width: 79%;
+}
+/*__block2________________*/
+.content{
+	display: flex;
+	margin: 2rem 0;
+	gap: 1rem;
+}
+.content p{
+	color: black;
+	line-height: 1.5rem;
+	text-align: left;
+}
+.content .h3{
+	margin-top: 1rem;
+}
+.child-content{
+	width: 100%;
+}
+.img-content{
+	width: 3.5rem;
+}
+.block-2{
+	margin: 7rem 0 0 1rem;
+}
+/*__block3________________*/
+.block-3{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 4rem;
+}
+.image-up{
+	position: absolute;
+	width: 100%;
+	height: auto;
+}
+.image-down{
+	width: 100%;
+	height: auto;
+}
+.image-block3{
+	position: relative;
+	margin: 0 1.5rem;
+}
+.mr-5{
+	margin-bottom: 1rem;
+}
+.content-block3 .h3{
+	text-align: center;
+}
+/*__block4_____________________________________________________*/
+.carusel{
+	box-sizing: border-box;
+	background-color: #F6F8FA;
+}
+.block-4 .h1{
+	padding-top: 3rem;
+}
+.carusel-main{
+	padding: 1.3rem;
+	background-color: #fff;
+	border-radius: 0.5rem;
+	max-height: 100%;
+	box-shadow: 0 0 4rem 2rem rgb(170 170 187 / 20%);
+	height: 100%;
+}
+.carusel-title{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 0.5rem;
+}
+.carusel-text{
+	display: flex;
+	flex-direction: column;
+	padding-left: 1rem;
+}
+.carusel-text .h3{
+	font-weight: 600;
+}
+.carusel-image{
+	width: 3rem;
+	height: fit-content;
+}
+.mr{margin-top: 3rem;}
+.pd-7{padding-bottom: 7rem;}
+.mySlides {
+	display: none;
+	margin: 1rem 1rem 1rem 1rem;
+}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 904px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+	cursor: pointer;
+	height: 0.5rem;
+	width: 0.5rem;
+	margin: 0 0.4rem;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.pd-7 .active, .dot:hover {
+  background-color: #2A6CEA;
+}
+.display, .display2{
+	display: none;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/*__________________________________________________________________*/
+.footer{
+	font-size: 1rem;
+	text-align: center;
+	padding: 2rem;
+}/*___адаптив_________________________________*/
+@media screen and (min-width: 375px) and (max-width: 767px){
+	.mr-15{margin: 6rem 2rem 0.5rem 2rem;}
+	.top .h2{margin: 0 2rem;}
+	.btn-big{width: 16rem;}
+	.block-1{padding-bottom: 6rem;}
+	.img-back{height: 31rem;}
+	.block-2{margin: 7rem 1rem 0 1rem;}
+	.content-block3{margin: 0 1rem;}
+}
+@media (min-width: 768px) and (max-width: 1919px){
+	.img-back{background-image:url("../image/Lunch768.png"); height: 30rem; margin-bottom: 17rem;}
+	.btn-big{width: 16rem;}
+	.block-1 .container{max-width: 440px;}
+	.block-2{margin: 7rem 1rem 4rem 1rem;}
+	.wrap-content{display: flex; flex-wrap: wrap;}
+	.content{width: 50%;}
+	.block-1{padding-bottom: 9rem;}
+	.img-back{background-position-y: 20%;}
+
+	.block-3{flex-wrap: wrap; flex-direction: row-reverse;}
+	.content-block3, .image-block3{width: 46%;}
+
+	.display{display: block;}
+	.db{display: flex; gap: 3rem;}
+}
+@media (min-width: 1920px){
+	.img-back{background-image:url("../image/Lunch.png"); height: 30rem; margin-bottom: 17rem;}
+	.btn-big{width: 16rem; margin-top: 6rem;}
+	.block-1 .container{max-width: 440px;}
+
+	.block-2{margin: 9rem 1rem 4rem 1rem;}
+	.wrap-content{display: flex; flex-wrap: wrap; gap: 1rem;}
+	.content{width: 23%; flex-direction: column; gap: 1rem;}
+
+	.block-3{flex-wrap: wrap; flex-direction: row-reverse;}
+	.content-block3, .image-block3{width: 46%;}
+	
+	.display, .display2{display: block;}
+	.db{display: flex; gap: 3rem;}
+}

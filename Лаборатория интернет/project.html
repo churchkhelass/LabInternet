@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="css/style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--<script type='text/javascript' src="js/javascript.js"></script>-->
+	<title>Тестовое задание</title>
+</head>
+<body>
+   <header>
+      <div class="block-1">
+         <div class="img-back"></div>
+         <div class="header">
+            <div class="logo">
+               <div class="circle1"></div>
+               <div class="circle2"></div>
+               <p class="logo-name">testLab</p>
+            </div>
+            <div class="menu-btn">
+               <span></span>
+               <span></span>
+            </div>
+         </div>
+         <div class="menu">
+            <nav>
+               <ul>
+                  <li>
+                     <div class="logo">
+                        <div class="circle1"></div>
+                        <div class="circle2"></div>
+                        <p class="logo-name">testLab</p>
+                     </div>
+                  </li>
+                  <hr/>
+                  <li>
+                     <a href="#">Как это работает<div class="arrow-right"></div></a>
+                  </li>
+                  <hr>
+                  <li>
+                     <a href="#">3-й блок<div class="arrow-right"></div></a>
+                  </li>
+                  <hr>
+                  <li>
+                     <a href="#">Вопросы и ответы<div class="arrow-right"></div></a>
+                  </li>
+                  <hr>
+                  <li>
+                     <a href="#">Форма<div class="arrow-right"></div></a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+         <div class="container">
+            <div class="top">
+               <p class="h1 mr-15">Говорят, никогда не поздно сменить профессию</p>
+               <p class="h2">Сделай круто тестовое задание и у тебя получится</p>
+               <button class="btn-big">Проще простого!</button>
+            </div>
+         </div>
+      </div>
+      <script>
+         let menuBtn = document.querySelector('.menu-btn');
+         let menu = document.querySelector('.menu');
+         
+         menuBtn.addEventListener('click', function(){
+            menuBtn.classList.toggle('active');
+            menu.classList.toggle('active');
+         })
+      </script>
+	</header>
+   <main>
+      <div class="container">
+         <div class="block-2">
+            <p class="h1" style="color:black;">Как это работает</p>
+            <div class="wrap-content">
+               <div class="content">
+                  <div><img class="img-content" src="image/waiting1.svg" alt=""></div>
+                  <div class="child-content">
+                     <p class="h2">Прочитай задание внимательно</p>
+                     <p class="h3 font">Думаю у тебя не займет это больше двух-трех минут</p>
+                  </div>
+               </div>
+               <div class="content">
+                  <div><img class="img-content" src="image/delivery-truck2.svg" alt=""></div>
+                  <div class="child-content">
+                     <p class="h2">Изучи весь макет заранее</p>
+                     <p class="h3 font">Подумай как это будет работать на разных разрешениях и при скролле</p>
+                  </div>
+               </div>
+               <div class="content">
+                  <div><img class="img-content" src="image/secure3.svg" alt=""></div>
+                  <div class="child-content">
+                     <p class="h2">Сделай хорошо</p>
+                     <p class="h3 font">Чтобы мы могли тебе доверить подобные задачи в будущем</p>
+                  </div>
+               </div>
+               <div class="content">
+                  <div><img class="img-content" src="image/money-bags4.svg" alt=""></div>
+                  <div class="child-content">
+                     <p class="h2">Получи предложение</p>
+                     <p class="h3 font">Ну тут все просто, не я придумал правила, но думаю так и будет)))</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="block-3">
+            <div class="image-block3">
+               <img class="image-up" src="image/2_1.svg" alt="">
+               <img class="image-down" src="image/2_2.png" alt="">
+            </div>
+            <div class="content-block3">
+               <p class="h2 mr-5" style="color: black;">Круто, ты дошел до третьего блока</p>
+               <p class="h3">63% опрошенных пользовались кредитами из-за того, что не могли покрыть непредвиденные расходы свыше 15 000 ₽.</p>
+               <br><br>
+               <p class="h3">Доступ к заработанным деньгам помогает отказаться от кредитов и экономить деньги на процентах и штрафах.</p>
+            </div>
+         </div>
+      </div>
+      <div class="block-4 carusel">
+         <p class="h1 mr-5 pd-6" style="color: black;">Отзывы</p>
+         <div class="slideshow-container">
+
+            <div class="mySlides fade">
+               <div class="db">
+                  <div class="carusel-main">
+                     <div class="carusel-title">
+                        <img class="carusel-image"src="image/Ellipse 21.svg" alt="">
+                        <div class="carusel-text">
+                           <p class="h3">Константинов Михаил Павлович</p>
+                           <p class="h6 mr-3">Санкт-Петербург</p>
+                        </div>
+                     </div>
+                     <p class="h5">Каждый из нас понимает очевидную вещь: перспективное планирование предоставляет широкие возможности для анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы</p>
+                  </div>
+                  <div class="carusel-main display">
+                     <div class="carusel-title">
+                        <img class="carusel-image"src="image/Ellipse 21.svg" alt="">
+                        <div class="carusel-text">
+                           <p class="h3">Иван Иванов</p>
+                           <p class="h6 mr-3">Санкт-Петербург</p>
+                        </div>
+                     </div>
+                     <p class="h5">Каждый из нас понимает очевидную вещь: перспективное планирование предоставляет широкие возможности для анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы упускаем, что активно развивающиеся страны третьего мира призваны к ответу.</p>
+                  </div>
+                  <div class="carusel-main display2">
+                     <div class="carusel-title">
+                        <img class="carusel-image"src="image/Ellipse 21.svg" alt="">
+                        <div class="carusel-text">
+                           <p class="h3">Константинов Михаил Павлович</p>
+                           <p class="h6 mr-3">Санкт-Петербург</p>
+                        </div>
+                     </div>
+                     <p class="h5">Каждый из нас понимает очевидную вещь: перспективное планирование предоставляет широкие возможности для анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы</p>
+                  </div>
+               </div>
+            </div>
+            
+            <div class="mySlides fade">
+               <div class="carusel-main">
+                  <div class="carusel-title">
+                     <img class="carusel-image"src="image/Ellipse 21.svg" alt="">
+                     <div class="carusel-text">
+                        <p class="h3">Константинов Михаил Павлович</p>
+                        <p class="h6 mr-3">Санкт-Петербург</p>
+                     </div>
+                  </div>
+                  <p class="h5">Каждый из нас понимает очевидную вещь: перспективное планирование предоставляет широкие возможности для анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы</p>
+               </div>
+            </div>
+            
+            <div class="mySlides fade">
+               <div class="carusel-main">
+                  <div class="carusel-title">
+                     <img class="carusel-image"src="image/Ellipse 21.svg" alt="">
+                     <div class="carusel-text">
+                        <p class="h3">Константинов Михаил Павлович</p>
+                        <p class="h6 mr-3">Санкт-Петербург</p>
+                     </div>
+                  </div>
+                  <p class="h5">Каждый из нас понимает очевидную вещь: перспективное планирование предоставляет широкие возможности для анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы</p>
+               </div>
+            </div>
+
+            <div class="mySlides fade">
+               <div class="carusel-main">
+                  <div class="carusel-title">
+                     <img class="carusel-image"src="image/Ellipse 21.svg" alt="">
+                     <div class="carusel-text">
+                        <p class="h3">Константинов Михаил Павлович</p>
+                        <p class="h6 mr-3">Санкт-Петербург</p>
+                     </div>
+                  </div>
+                  <p class="h5">Каждый из нас понимает очевидную вещь: перспективное планирование предоставляет широкие возможности для анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы</p>
+               </div>
+            </div>
+
+            <div class="mySlides fade">
+               <div class="carusel-main">
+                  <div class="carusel-title">
+                     <img class="carusel-image"src="image/Ellipse 21.svg" alt="">
+                     <div class="carusel-text">
+                        <p class="h3">Константинов Михаил Павлович</p>
+                        <p class="h6 mr-3">Санкт-Петербург</p>
+                     </div>
+                  </div>
+                  <p class="h5">Каждый из нас понимает очевидную вещь: перспективное планирование предоставляет широкие возможности для анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы</p>
+               </div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div class="pd-7"  style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span> 
+              <span class="dot" onclick="currentSlide(5)"></span>  
+            </div>
+         </div>
+         <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+      </div>
+      <!--<div class="block-5">
+         <h2>Вопросы и ответы</h2>
+         <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+         </ul>
+      </div>
+      <div class="block-6">
+         <div>
+            <div></div>
+            <div></div>
+         </div>
+         <div>
+            <div></div>
+            <div></div>
+         </div>
+         <div>
+            <div></div>
+            <div></div>
+         </div>
+         <div>
+            <div></div>
+            <div></div>
+         </div>
+      </div>
+      <div class="block-7 form"></div>-->
+   </main>
+   <footer>
+      <div class="footer">© 2021 Лаборатория интернет</div>
+   </footer>
+</body>
+</html>
